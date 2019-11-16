@@ -4,15 +4,9 @@ const http = require("http")
 const Discord = require("discord.js");
 const fs = require("fs");
 const client = new Discord.Client();
-fs.readFile('./index.html', function (err, html) {
-    if (err) {
-        throw err; 
-    }       
-    http.createServer(function(request, response) {  
-        response.writeHeader(200, {"Content-Type": "text/html"});  
-        response.write(html);  
-        response.end();  
-    }).listen(8000);
+http.createServer(function (req, res) {
+  res.write('Hello World!');
+  res.end();
 });
 // server.js
 // where your node app starts
