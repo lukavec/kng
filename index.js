@@ -8,7 +8,7 @@ const client = new Discord.Client();
 
 // init project
 client.login(process.env.TOKEN);
---const bodyParser = require("body-parser");
+//const bodyParser = require("body-parser");
 /*const app = express();
 
 /*app.get("/", function(request, response) {
