@@ -1,12 +1,25 @@
 //const express = require("express");
 require("dotenv").config();
+//const app = require("")
 const http = require("http")
 const Discord = require("discord.js");
 const fs = require("fs");
 const client = new Discord.Client();
-http.createServer(function (req, res) {
+/*http.createServer(function (req, res) {
   res.write('Hello World!');
   res.end();
+});*/
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
 });
 // server.js
 // where your node app starts
