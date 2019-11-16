@@ -1,6 +1,6 @@
-//const express = require("express");
+const express = require("express");
 require("dotenv").config();
-//const app = require("")
+const app = express;
 const http = require("http")
 const Discord = require("discord.js");
 const fs = require("fs");
@@ -9,7 +9,7 @@ const client = new Discord.Client();
   res.write('Hello World!');
   res.end();
 });*/
-const hostname = 'https://inteligentnideckabot.herokuapp.com/';
+/*const hostname = 'https://inteligentnideckabot.herokuapp.com/';
 const port = 3000;
 
 const server = http.createServer((req, res) => {
@@ -17,9 +17,15 @@ const server = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/plain');
   res.end('Hello World\n');
 });
-
+server.listen(process.env.PORT || 3000);
 server.listen(port, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
+});*/
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+const server = app.listen(7000, () => {
+  console.log(`Express running → PORT ${server.address().port}`);
 });
 // server.js
 // where your node app starts
