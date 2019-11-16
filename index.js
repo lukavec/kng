@@ -7,8 +7,8 @@ const client = new Discord.Client();
 // where your node app starts
 
 // init project
-console.log(secrets.TOKEN)
-client.login(secrets.TOKEN);
+console.log(${{ secrets.TOKEN }})
+client.login(${{ secrets.TOKEN }});
 //const bodyParser = require("body-parser");
 /*const app = express();
 
