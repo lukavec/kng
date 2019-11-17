@@ -118,6 +118,9 @@ client.on("message", msg => {
           msg.content.toLowerCase().includes("messenger",msg.content.toLowerCase().indexOf("discord")):
           msg.reply("Discord je lepší úplně ve všem.");
           break;
+        case msg.content.toLowerCase().includes("takovej podvod"):
+           msg.replay("Jo, takovej podvod!");
+          msg.author.send("BTW Je to daňový, nebo dotační podvod?");
         default:
           msg.reply("COŽE?");
           break;
