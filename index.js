@@ -121,6 +121,7 @@ client.on("message", msg => {
         case msg.content.toLowerCase().includes("takovej podvod"):
           msg.reply("Jo, takovej podvod!");
           msg.author.send("BTW Je to daňový, nebo dotační podvod?");
+          break;
         default:
           msg.reply("COŽE?");
           break;
