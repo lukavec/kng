@@ -1,6 +1,6 @@
-const express = require("express");
+//const express = require("express");
 require("dotenv").config();
-const app = express;
+//const app = express;
 const http = require("http")
 const Discord = require("discord.js");
 const fs = require("fs");
@@ -21,12 +21,12 @@ server.listen(process.env.PORT || 3000);
 server.listen(port, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });*/
-app.get('/', (req, res) => {
+/*app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 const server = app.listen(7000, () => {
   console.log(`Express running → PORT ${server.address().port}`);
-});
+});*/
 // server.js
 // where your node app starts
 
