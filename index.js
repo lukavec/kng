@@ -104,7 +104,7 @@ client.on("message", msg => {
       msg.reply("Give me 1 reason WHY!");
       //msg.reply(msg.content)
     }
-    if (msg.channel.type == "text" && msg.content == "pls help") {
+    if (msg.channel.type == "text" && msg.content == "/pls help") {
       msg.delete();
       msg.member.send("Zdar, s čím chceš pomoct?");
     }
